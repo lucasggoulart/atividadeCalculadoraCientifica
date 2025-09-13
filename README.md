@@ -1,6 +1,6 @@
-# 👥 Grupo
+# 👥 Grupo da atividade:
 
-- **Lucas**
-- **Leonardo**
-- **Nicolas**
-- **Ryan**
+- **Lucas Goulart**
+- **Leonardo Elias**
+- **Nicolas Alves**
+- **Ryan Batista**
