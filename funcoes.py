@@ -1,10 +1,12 @@
 # Shift e Alpha
 # Deve ter duas variáveis chamadas "shift" e "alpha" iniciada como False:
 
-def toggle_shift(shift):
+def toggle_shift():
+    global shift
     shift = not shift
 
-def toggle_alpha(alpha):
+def toggle_alpha():
+    global alpha
     alpha = not alpha
 
 # Replay
@@ -116,7 +118,7 @@ def func_m_plus():
 
 current_mode = "COMP"  # padrão inicial = cálculo normal
 
-def toggle_mode():
+def toggle_mode(root):
     global current_mode
 
     # Criar janela popup
@@ -132,7 +134,6 @@ def toggle_mode():
     def set_mode(mode):
         global current_mode
         current_mode = mode
-        painel.config(text=f"Modo atual: {current_mode}")
         mode_window.destroy()
 
     tk.Button(mode_window, text="1. COMP (Normal)", width=20, command=lambda: set_mode("COMP")).pack(pady=5)
